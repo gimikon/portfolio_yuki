@@ -1,5 +1,58 @@
+var firebaseConfig = {
+  apiKey: "AIzaSyAfOF4YA7pP-spso7yEfsfSHhAhTteZKc4",
+  authDomain: "contact-form-c48dd.firebaseapp.com",
+  databaseURL: "https://contact-form-c48dd.firebaseio.com",
+  projectId: "contact-form-c48dd",
+  storageBucket: "contact-form-c48dd.appspot.com",
+  messagingSenderId: "123611450902",
+  appId: "1:123611450902:web:4adb3856eeeabb4c482f37",
+  measurementId: "G-RWY0154ZY6"
+};
+firebase.initializeApp(firebaseConfig);
+
+var messagesRef = firebase.database().ref('messages')
+
+  //listen for form submit 
+  document.getElementById('contactForm').addEventListener('submit',
+  submitForm);
+
+  function submitForm(e){
+    e.preventDefault();
+    var name = getInputValue('name')
+    var email = getInputValue('email')
+    var message = getInputValue('message')
+    saveMessage(name, email, message)
+  }
+
+  //function to get values
+
+  function getInputValue(id){
+    return document.getElementById(id).value; 
+
+  } 
+
+  function saveMessage(name, email, message){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+      name:name,
+      email:email,
+      message:message
+    }); 
+
+  }
+
+
+
+
+
 (function($) {
   "use strict"; // Start of use strict
+
+
+  
+  // Initialize Firebase
+ 
+
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -38,5 +91,8 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+
+
 
 })(jQuery); // End of use strict

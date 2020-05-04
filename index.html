@@ -360,28 +360,32 @@
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
             <h2 class="text-black mb-2">Contact!</h2>
             <hr class="d-none d-lg-block mx-auto m-0 mb-5" />
+            <div class='alert'>You message has been sent</div>
 
-            <form action="mailto:[yukiko.isogimi@gmail.com]">
+            <form id="contactForm">
               <div class="form-group text-white">
                 <input
-                  type="name"
+                  type="text"
                   class="form-control"
-                  id="exampleInputName"
+                  id="name"
+                  name="name"
                   placeholder="Name"
                 />
               </div>
               <div class="form-group">
                 <input
-                  type="email"
+                  type="text "
                   class="form-control"
-                  id="exampleInputEmail"
+                  id="email"
+                  name="email"
                   placeholder="Enter email"
                 />
               </div>
               <div class="form-group">
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="message"
+                  name="message  "
                   rows="5"
                   placeholder="Your Message"
                 ></textarea>
@@ -469,6 +473,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
+    <script src="js/grayscale.js"></script>
   </body>
 </html>

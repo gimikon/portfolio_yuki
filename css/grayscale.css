@@ -463,3 +463,7 @@ span :hover {
 #portfolio ul li:hover {
   color: #000;
 }
+
+.alert {
+  text-align: center;
+}
