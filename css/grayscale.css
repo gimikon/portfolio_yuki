@@ -466,4 +466,9 @@ span :hover {
 
 .alert {
   text-align: center;
+  padding:4px;
+  background-color:#94d5f4;
+  color:white;
+  margin-bottom: 10px ;
+  display: none;
 }

@@ -22,6 +22,13 @@ var messagesRef = firebase.database().ref('messages')
     var email = getInputValue('email')
     var message = getInputValue('message')
     saveMessage(name, email, message)
+    document.querySelector('.alert').style.display='block'
+
+    setTimeout(function(){
+      document.querySelector('.alert').style.display='none'
+    }, 3000)
+
+    document.getElementById('contactForm').reset();
   }
 
   //function to get values
