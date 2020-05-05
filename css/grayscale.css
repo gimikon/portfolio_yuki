@@ -49,13 +49,13 @@
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .nav-link {
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -93,7 +93,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url("../img/opening.jpg");
+  background: url("../img/opening1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -466,9 +466,9 @@ span :hover {
 
 .alert {
   text-align: center;
-  padding:4px;
-  background-color:#94d5f4;
-  color:white;
-  margin-bottom: 10px ;
+  padding: 4px;
+  background-color: #94d5f4;
+  color: white;
+  margin-bottom: 10px;
   display: none;
 }
