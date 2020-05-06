@@ -25,22 +25,7 @@ const banner = ['/*!\n',
   '\n'
 ].join('');
 
-// BrowserSync
-function browserSync(done) {
-  browsersync.init({
-    server: {
-      baseDir: "./"
-    },
-    port: 3000
-  });
-  done();
-}
 
-// BrowserSync reload
-function browserSyncReload(done) {
-  browsersync.reload();
-  done();
-}
 
 // Clean vendor
 function clean() {
